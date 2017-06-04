@@ -1,0 +1,11 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+authors = ["Crandel <cradlemann@gmail.com>"]
+
+license-file = "LICENSE"
+
+[lib]
+name = "rust_test"
+path = "src/main.rs"
+[dependencies]
