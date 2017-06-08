@@ -75,4 +75,5 @@ pub fn primitives() {
     println!("PI to Degrees = {}", 3.14f64.to_degrees());
     println!("Max 4, 5 = {}", 4f64.max(5f64));
     println!("Min 4, 5 = {}", 4f64.min(5f64));
+    println!("Sin Pi = {}", 3.14f64.sin());
 }
