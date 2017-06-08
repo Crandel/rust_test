@@ -1,4 +1,4 @@
-pub fn cond() {
+pub fn main() {
     let age = 6;
     let some = true;
     if age < 3 {

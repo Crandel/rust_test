@@ -1,4 +1,4 @@
-pub fn loops() {
+pub fn main() {
 
     let mut x = 1;
     loop {
