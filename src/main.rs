@@ -1,15 +1,17 @@
 // mod primitives;
 // mod conditionals;
 // mod loops;
-mod strings;
+// mod strings;
+mod input;
 
 fn main() {
     println!("{}", "+".repeat(10));
-    // primitives::main();
+    // primitives::test_primitives();
     // println!("{}", "-".repeat(10));
-    // conditionals::main();
+    // conditionals::test_conditionals();
     // println!("{}", "*".repeat(10));
-    // loops::main();
-    strings::main();
+    // loops::test_loops();
+    // strings::test_strings();
+    input::test_input();
     println!("{}", "/".repeat(10));
 }

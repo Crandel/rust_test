@@ -1,12 +1,12 @@
-pub fn main() {
+pub fn test_conditionals() {
     let age = 6;
     let some = true;
     if age < 3 {
         println!("{} is lower 3", age);
-    } else if (age >= 5) && (some) {
+    } else if age >= 5 && (some) {
         println!("{0} && {1}", age, some);
     }
     println!("!true = {}", !some);
-    let ternar = if (age >= 8) { true } else { false };
+    let ternar = if age >= 8 { true } else { false };
     println!("ternar is {}", ternar);
 }

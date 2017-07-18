@@ -1,8 +1,8 @@
-pub fn main() {
+pub fn test_loops() {
 
     let mut x = 1;
     loop {
-        if ((x % 2) == 0) {
+        if x % 2 == 0 {
             println!("infinite loop: x is {}", x);
         }
         if x == 15 {
