@@ -3,7 +3,8 @@
 // mod loops;
 // mod strings;
 // mod input;
-mod sequences;
+// mod sequences;
+mod funcs;
 
 fn main() {
     println!("{}", "+".repeat(10));
@@ -14,6 +15,7 @@ fn main() {
     // loops::test_loops();
     // strings::test_strings();
     // input::test_input();
-    sequences::test_seq();
+    // sequences::test_seq();
+    funcs::test_func();
     println!("{}", "/".repeat(10));
 }
