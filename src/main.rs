@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 // mod primitives;
 // mod conditionals;
 // mod loops;
@@ -5,19 +6,21 @@
 // mod input;
 // mod sequences;
 // mod funcs;
-mod structs;
+// mod structs;
+mod enums;
 
 fn main() {
     println!("{}", "+".repeat(10));
-    // primitives::test_primitives();
+    // primitives::primitives_test();
     // println!("{}", "-".repeat(10));
-    // conditionals::test_conditionals();
+    // conditionals::conditionals_test();
     // println!("{}", "*".repeat(10));
-    // loops::test_loops();
-    // strings::test_strings();
-    // input::test_input();
-    // sequences::test_seq();
-    // funcs::test_func();
-    structs::test_structs();
+    // loops::loops_test();
+    // strings::strings_test();
+    // input::input_test();
+    // sequences::seq_test();
+    // funcs::func_test();
+    // structs::structs_test();
+    enums::enums_test();
     println!("{}", "/".repeat(10));
 }

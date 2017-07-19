@@ -1,4 +1,4 @@
-pub fn test_structs() {
+pub fn structs_test() {
 
     let mut user = User {
         name: "Vitalii".to_owned(), surname: "Drevenchuk".to_owned(), age: 29, money: 100.00

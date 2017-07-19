@@ -1,4 +1,4 @@
-pub fn test_strings() {
+pub fn strings_test() {
     let strng = "Some simple string in the world";
     println!("Lenght: {}", strng.len());
     // Split using an index

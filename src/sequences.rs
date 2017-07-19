@@ -1,4 +1,4 @@
-pub fn test_seq() {
+pub fn seq_test() {
     let rand_arr = [3, 5, 1, 4, 80];
     println!("rand_arr[2] is {}", rand_arr[2]);
     println!("rand_arr length is {}", rand_arr.len());

@@ -1,4 +1,4 @@
-pub fn test_conditionals() {
+pub fn conditionals_test() {
     let age = 6;
     let some = true;
     if age < 3 {

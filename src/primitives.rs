@@ -2,7 +2,7 @@
 
 // use std::io::stdin;
 
-pub fn test_primitives() {
+pub fn primitives_test() {
     println!("Hello, world!");
 
     let mut num: i64 = 34;

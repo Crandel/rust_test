@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-pub fn test_input() {
+pub fn input_test() {
     'outer: loop {
         let number: i32 = 15;
         println!("Pick a number!");

@@ -1,4 +1,4 @@
-pub fn test_loops() {
+pub fn loops_test() {
 
     let mut x = 1;
     loop {

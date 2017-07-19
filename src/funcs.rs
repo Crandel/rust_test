@@ -1,4 +1,4 @@
-pub fn test_func() {
+pub fn func_test() {
     let (a, b) = (34, 65);
     let (a8, b8) = (3i8, 7i8);
     let s = sum_fn;
