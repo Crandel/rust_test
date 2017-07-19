@@ -4,7 +4,8 @@
 // mod strings;
 // mod input;
 // mod sequences;
-mod funcs;
+// mod funcs;
+mod structs;
 
 fn main() {
     println!("{}", "+".repeat(10));
@@ -16,6 +17,7 @@ fn main() {
     // strings::test_strings();
     // input::test_input();
     // sequences::test_seq();
-    funcs::test_func();
+    // funcs::test_func();
+    structs::test_structs();
     println!("{}", "/".repeat(10));
 }
