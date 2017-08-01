@@ -1,16 +1,16 @@
 pub fn structs_test() {
 
-    let mut user = User {
+    let user = User {
         name: "Vitalii".to_owned(), surname: "Drevenchuk".to_owned(), age: 29, money: 100.00
     };
 
     println!("User {0} {1}", user.name, user.get_surname());
-    let mut cow = Cow {
+    let cow = Cow {
         sound: "Myyy".to_owned(), color: "Black".to_owned(), age: 2
     };
 
-    println!("{}", user.say());
-    println!("{}", cow.say());
+    println!("{}", say_something(&user));
+    println!("{}", say_something(&cow));
 }
 
 struct User {
@@ -22,6 +22,10 @@ struct User {
 
 fn get_name(user: &User) -> &str {
     &user.name
+}
+
+fn say_something(sm: &SoundMaker) -> String {
+    sm.say()
 }
 
 impl User {
@@ -40,13 +44,13 @@ trait SoundMaker {
     fn say(&self) -> String;
 }
 
-impl User {
+impl SoundMaker for User {
     fn say(&self) -> String {
         format!("User {} say hello!", &self.name)
     }
 }
 
-impl Cow {
+impl SoundMaker for Cow {
     fn say(&self) -> String {
         format!("{} cow say {}", &self.color, &self.sound)
     }

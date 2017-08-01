@@ -6,7 +6,7 @@
 // mod input;
 // mod sequences;
 // mod funcs;
-// mod structs;
+mod structs;
 mod enums;
 
 fn main() {
@@ -20,7 +20,7 @@ fn main() {
     // input::input_test();
     // sequences::seq_test();
     // funcs::func_test();
-    // structs::structs_test();
+    structs::structs_test();
     enums::enums_test();
     println!("{}", "/".repeat(10));
 }
