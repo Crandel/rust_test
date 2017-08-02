@@ -5,6 +5,11 @@ pub fn enums_test() {
     hulk.get_info();
     flash.get_info();
     superman.get_info();
+
+    let num = Some(6u8);
+    let null = None;
+    simple_add(num);
+    simple_add(null);
 }
 
 enum Hero {
@@ -22,5 +27,12 @@ impl Hero {
                 println!("{} secret is {}", name, secret);
             }
         }
+    }
+}
+
+fn simple_add(op: Option<u8>){
+    match op {
+        None => println!("None value"),
+        Some(x) => println!("x value is {}", x),
     }
 }
