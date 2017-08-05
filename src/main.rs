@@ -2,7 +2,7 @@
 extern crate test_lib;
 
 use test_lib::prim::{primitives, conditionals};
-use test_lib::{structs, enums};
+use test_lib::{structs, enums, sequences};
 
 fn main() {
     println!("{}", "+".repeat(10));
@@ -13,7 +13,7 @@ fn main() {
     // loops::loops_test();
     // strings::strings_test();
     // input::input_test();
-    // sequences::seq_test();
+    sequences::seq_test();
     // funcs::func_test();
     structs::structs_test();
     enums::enums_test();

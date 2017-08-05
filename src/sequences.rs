@@ -19,6 +19,9 @@ pub fn seq_test() {
     vec1.pop();
     println!("{:?}", vec1);
 
+    let vec_el1:&i32 = &vec1[2];
+    let vec_el2: Option<&i32> = vec1.get(3);
+    println!("{}, {:?}", vec_el1, vec_el2);
     println!("{}", "v".repeat(10));
     // TUPLES
     let pr_tup = ("Vitalii", "Igor", "Leo");
