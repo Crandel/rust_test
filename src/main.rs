@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-// mod primitives;
-// mod conditionals;
+use prim::primitives;
+use prim::conditionals;
 // mod loops;
 // mod strings;
 // mod input;
@@ -11,9 +11,9 @@ mod enums;
 
 fn main() {
     println!("{}", "+".repeat(10));
-    // primitives::primitives_test();
+    primitives::primitives_test();
     // println!("{}", "-".repeat(10));
-    // conditionals::conditionals_test();
+    conditionals::conditionals_test();
     // println!("{}", "*".repeat(10));
     // loops::loops_test();
     // strings::strings_test();
