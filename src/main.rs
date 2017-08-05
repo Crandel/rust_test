@@ -1,13 +1,8 @@
 #![allow(dead_code)]
-use prim::primitives;
-use prim::conditionals;
-// mod loops;
-// mod strings;
-// mod input;
-// mod sequences;
-// mod funcs;
-mod structs;
-mod enums;
+extern crate test_lib;
+
+use test_lib::prim::{primitives, conditionals};
+use test_lib::{structs, enums};
 
 fn main() {
     println!("{}", "+".repeat(10));
