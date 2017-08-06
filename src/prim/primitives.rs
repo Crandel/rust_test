@@ -59,7 +59,7 @@ pub fn primitives_test() {
     println!("5.0 / 4.0 = {}", 5.0 / 4.0);
     println!("5.0 % 4.0 = {}", 5.0 % 4.0);
 
-    let mut neg_4 = -4i32;
+    let neg_4 = -4i32;
 
     println!("abs(-4) = {}", neg_4.abs());
     println!("4 ^ 6 = {}", 4i32.pow(6));

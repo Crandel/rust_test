@@ -15,25 +15,25 @@ pub fn strings_test() {
         i = str_count.next();
     }
 
-    // let mut str_count = strng.split_whitespace();
-    // let mut i = str_count.next();
-    // loop {
-    //     match i {
-    //         Some(x) => println!("{}", x),
-    //         None => break,
-    //     }
-    //     i = str_count.next();
-    // }
+    let mut str_count = strng.split_whitespace();
+    let mut i = str_count.next();
+    loop {
+        match i {
+            Some(x) => println!("{}", x),
+            None => break,
+        }
+        i = str_count.next();
+    }
 
-    // let strng2 = "First line\nSecond line\nthird line";
-    // let mut str_count = strng2.lines();
-    // let mut i = str_count.next();
-    // loop {
-    //     match i {
-    //         Some(x) => println!("{}", x),
-    //         None => break,
-    //     }
-    //     i = str_count.next();
-    // }
+    let strng2 = "First line\nSecond line\nthird line";
+    let mut str_count = strng2.lines();
+    let mut i = str_count.next();
+    loop {
+        match i {
+            Some(x) => println!("{}", x),
+            None => break,
+        }
+        i = str_count.next();
+    }
     println!("find 'some' => {}", strng.contains("Some"));
 }

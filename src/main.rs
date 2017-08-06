@@ -11,9 +11,9 @@ fn main() {
     // conditionals::conditionals_test();
     // println!("{}", "*".repeat(10));
     // loops::loops_test();
-    strings::strings_test();
+    // strings::strings_test();
     // input::input_test();
-    // sequences::seq_test();
+    sequences::seq_test();
     // funcs::func_test();
     // structs::structs_test();
     // enums::enums_test();
