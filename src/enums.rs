@@ -1,7 +1,10 @@
 pub fn enums_test() {
     let hulk = Hero::Strong(100);
     let flash = Hero::Fast;
-    let superman = Hero::Info{name: "superman".to_owned(), secret: "Clark Kent".to_owned()};
+    let superman = Hero::Info{
+        name: "superman".to_owned(), 
+        secret: "Clark Kent".to_owned()
+    };
     hulk.get_info();
     flash.get_info();
     superman.get_info();
