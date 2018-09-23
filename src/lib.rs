@@ -1,8 +1,9 @@
-pub mod prim;
-pub mod loops;
-pub mod strings;
-pub mod input;
-pub mod sequences;
-pub mod funcs;
-pub mod structs;
+pub mod base_test;
 pub mod enums;
+pub mod funcs;
+pub mod input;
+pub mod loops;
+pub mod prim;
+pub mod sequences;
+pub mod strings;
+pub mod structs;

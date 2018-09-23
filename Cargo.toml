@@ -9,6 +9,8 @@ license-file = "LICENSE"
 name = "test_lib"
 path = "src/lib.rs"
 
+[dependencies]
+base64 = "0.9.3"
 
 [profile.debug]
 opt-level = 0

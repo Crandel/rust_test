@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 extern crate test_lib;
 
-use test_lib::prim::{primitives, conditionals};
+// use test_lib::prim::{conditionals, primitives};
 use test_lib::*;
 
 use std::env;
@@ -13,6 +13,9 @@ fn main() {
 
     println!("{:?}", args);
     println!("{}", "+".repeat(10));
+    let base = base_test::Basic::new(String::from("admin"), String::from("pass"));
+    let base_str = base.encode_tostr();
+    println!("{}", base_str);
     // primitives::primitives_test();
     // println!("{}", "-".repeat(10));
     // conditionals::conditionals_test();
