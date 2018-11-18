@@ -7,13 +7,14 @@ pub fn seq_test() {
     println!("rand_arr[1..3] slice is {:?}", &rand_arr[1..3]);
 
     println!("{}\n", "a".repeat(10));
+
     // VECTORS
     let mut vec1 = vec![1, 6, 8, 5, 12, 11, 76, 90];
     println!("vec1[2] is {}", vec1[2]);
 
-    // for v in &vec1 {
-    //     println!("Vec member -> {}", v);
-    // }
+    for v in &vec1 {
+        println!("Vec member -> {}", v);
+    }
 
     vec1.push(65);
     println!("vec1 after push -> {:?}", vec1);
@@ -21,10 +22,20 @@ pub fn seq_test() {
     vec1.pop();
     println!("vec1 after pop -> {:?}", vec1);
 
-    let vec_el1:&i32 = &vec1[2];
+    let vec_el1: &i32 = &vec1[2];
     let vec_el2: Option<&i32> = vec1.get(3);
-    println!("get elem of vectors: '2' -> {}, '3' -> {:?}", vec_el1, vec_el2);
+    println!(
+        "get elem of vectors: '2' -> {}, '3' -> {:?}",
+        vec_el1, vec_el2
+    );
+
+    let mut vec2 = Vec::new();
+    vec2.push(1);
+    vec2.push(2);
+    println!("vec 2 lenght is {}", vec2.len());
+
     println!("{}\n", "v".repeat(10));
+
     // TUPLES
     let pr_tup = ("Vitalii", "Igor", "Leo");
     let pr_tup2: (&str, &str, i8, i32) = ("Vitalii", "Drevenchuk", 29, 1988);
@@ -41,7 +52,7 @@ pub fn seq_test() {
     println!("HashMap1 -> {:?}\n", scores);
 
     // Another way to create HashMap
-    let teams  = vec![String::from("Blue"), String::from("Yellow")];
+    let teams = vec![String::from("Blue"), String::from("Yellow")];
     let initial_scores = vec![10, 50];
 
     let scores2: HashMap<_, _> = teams.iter().zip(initial_scores.iter()).collect();

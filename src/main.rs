@@ -8,14 +8,16 @@ use std::env;
 use std::io;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let mut err = io::stderr();
+    // let args: Vec<String> = env::args().collect();
+    // let mut err = io::stderr();
 
-    println!("{:?}", args);
+    // println!("{:?}", args);
     println!("{}", "+".repeat(10));
-    let base = base_test::Basic::new(String::from("admin"), String::from("pass"));
-    let base_str = base.encode_tostr();
-    println!("{}", base_str);
+    let input = "## rrr-43...origin/rrr-43 [ahead 1][behind 3]";
+    let base_str = &input[3..input.len()].split("...").collect::<Vec<&str>>();
+    // let base = base_test::Basic::new(String::from("admin"), String::from("pass"));
+    // let base_str = base.encode_tostr();
+    println!("{:?}", base_str);
     // primitives::primitives_test();
     // println!("{}", "-".repeat(10));
     // conditionals::conditionals_test();
