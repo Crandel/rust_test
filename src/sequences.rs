@@ -34,6 +34,13 @@ pub fn seq_test() {
     vec2.push(2);
     println!("vec 2 lenght is {}", vec2.len());
 
+    let test_str = "some test text";
+    let mut str_vec = Vec::new();
+    for chr in test_str.chars() {
+        str_vec.push(chr.to_string());
+    }
+    println!("{:?}", str_vec);
+
     println!("{}\n", "v".repeat(10));
 
     // TUPLES
